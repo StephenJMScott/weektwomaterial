@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="UTF-8">
+      <title>Form</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+   
+      <!--
+         Form with HTML5 tags and basic CSS
+      -->
+      <style type="text/css">
+
+      body{
+         font-family: 'Roboto', sans-serif;
+      }
+         #container{
+            width: 550px;
+            margin: auto;
+
+         }
+
+         legend{
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+         }
+            
+         label.field{
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+
+         }
+         input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+         }
+         .field{
+            padding: 6px 8px;
+         }
+
+         #currency{
+             width: 220px;
+             border-radius: 5px;
+             padding: 6px 8px;
+         }
+
+         fieldset{
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color:rgba(129, 187, 201,.2);
+
+         }
+         
+         :focus{
+            background-color:red;
+         }
+         
+         .checkbox{
+            width:10px;
+
+         }
+         .radio{
+            width:10px;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+         <form>
+            <fieldset>
+               <legend>Registration</legend>
+               <label for="text" class="field">UserName</label>
+               <input type="text" id="input" placeholder="required field" autofocus required><br>
+               <label for="email" class="field">Email</label>
+               <input type="email" id="email" placeholder="example@email.com"><br>
+               <label for="password" class="field">Password</label>
+               <input type="password" id = "password" placeholder="enter password" required><br>
+               <label for ="tel" class="field">Telephone</label>
+               <input type="tel" id="tel" placeholder="digits only" pattern="[0-9]{10}"><br>
+               <label for="card" class="field">Card Number</label>
+               <input type="text" id="text" placeholder="16 digit card number" required pattern="[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}"><br>
+               <label for="text" class="field">CV2</label>
+               <input type="text" id="text" placeholder="CV2" required pattern="[0-9]{3}"><br>
+               <label for ="textarea" class="field">Details</label>
+               <textarea placeholder="Enter Details" rows="4" cols="29"></textarea><br>
+               <label for="date" class="field">Date</label>
+               <input type="date" id="date"><br>
+               <label for="food" class="field">Course</label>
+               <label><input type="checkbox" name="course" value="Starter" class="checkbox">Starter</label>
+               <label><input type="checkbox" name="course" value="Main"  class="checkbox">Main</label>
+               <label><input type="checkbox" name="course" value="Desert"  class="checkbox">Desert</label><br>
+               <br>
+               <label for="gender" class="field">Gender</label>
+               <label><input type="radio" name="gender" value="male" class="radio">Male </label>
+               <label><input type="radio" name="gender" value="female" class="radio">Female </label>
+               <label><input type="radio" name="gender" value="other" class="radio">Other </label><br>
+               <br>
+               <label for="sign" class="field">Zodiac Sign</label>
+               <select id="sign">
+                  <option value="Fire">Fire</option>
+                  <option value="Earth">Earth</option>
+                  <option value="Wind">Wind</option>
+                  <option value="Water">Water</option>
+               </select>
+               <br>
+               <label for="genre" class ="field">Genre</label>
+               <input list="genres" name="Genre">
+                  <datalist id="genre">
+                     <option value="pop"></option>
+                     <option value="rock"></option>
+                     <option value="rap"></option>
+                     <option value="country"
+                  </datalist>
+               
+               
+               
+               <br>
+               <label for="submit" class="field">Submit</label>
+               <input type="submit" id="submit">
+            </fieldset>
+            
+         </form>
+         
+         
+         
+        
+    </div>
+   </body>
+
+</html>
