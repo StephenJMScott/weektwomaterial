@@ -1,0 +1,40 @@
+1. Read the requirements several times very carefully.
+2. Write down what the program should do.
+3. Change what you've written into a kind of pseudo-code
+4. Change the pseudo-code to actual code
+
+Write a function that writes the multiplication table 
+(in one column) of any number passed as parameter.
+So, calling multiplication_table(2) will return:
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+
+
+
+Define a function max() that takes two numbers as arguments and returns the largest 
+of them. Use the if-then-else construct available in Javascript.
+So, calling: max(2,4) will return:
+4
+
+
+
+
+Define a function new_max() that takes three numbers as arguments and returns the largest 
+of them. Use the if-then-else construct available in Javascript.
+So, calling: new_max(10,2,4) will return:
+10
+
+Write a function that takes a character (i.e. a string of length 1) and prints a message to say whether
+the letter is a vowel or not.
+So, calling is_vowel("a") will return:
+a is a vowel
+Calling is_vowel("s") will return:
+s is not a vowel

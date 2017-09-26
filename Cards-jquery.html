@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>jQuery</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		
+		
+		<style>
+			.redbackground{
+				background-color:red;
+			}
+			
+			.headerhover{
+				background-color:#5da6e9;
+			}
+			
+			.fntchng1{
+				font-size:50px;
+			}
+			
+			.buttonhover{
+				background-color:black;
+			}
+			
+			#collapse{
+				/*--I'm empty--*/
+			}
+			
+
+			
+		</style>
+		
+	</head>
+	<body>
+		<div id="container">
+		<nav>
+			<ul>
+				<li id="logoNav">CODE INSTITUTE</li>
+				<li id="stream1_btn">Stream 1</li>
+				<li id="stream2_btn">Stream 2</li>
+				<li id="stream3_btn">Stream 3</li>
+			</ul>
+		</nav>
+			<div class="card stream1">
+				<img class="card_image"src="img/3.png">
+				<div class="card_bottom">
+					<h2 class="card_head">HTML</h2>
+					<p class="card_para">Once you join a Code Institute Bootcamp you will be taken on an <a href="#">accelerated contextualised learning</a> path across 3 streams. Nothing is learned in isolation.We contextualise the content so that the knowledge and skills gained in each <a href="#">learning unit</a> feeds into, and is expanded upon, within the next unit.The outputs of each stream will be a project. </p>
+					<button class="bottom_button" id="collapse">Button</button>
+				</div>
+			</div>
+			<div class="card stream3">
+				<img class="card_image "src="img/1.png">	
+				<h2 class="card_head">MySql</h2>
+				<p class="card_para" id="par2">If you have questions about your career in coding or simply want to meet the Code Institute team, then come along to our next <a href="#">Careers Open Evening</a> in Dublin</p>
+				<button class="bottom_button" id="button_effects1">Button</button>
+			</div>
+
+			<div class="card stream2">
+				<img class="card_image "src="img/2.png">
+				<h2 class="card_head">Python</h2>
+				<p class="card_para">If you have questions about your career in coding or simply <a href="#">want</a> to meet the Code Institute team, then come along to our next <a href="#">Careers Open Evening</a> in Dublin</p>
+				<button class="bottom_button"id="button2">Button</button>
+			</div>
+			<div class="card stream1">
+				<img class="card_image"src="img/3.png">
+				<div class="card_bottom">
+				<h2 class="card_head">jQuery</h2>
+				<p class="card_para">Once you join a Code Institute Bootcamp you will be taken on an accelerated contextualised learning path across 3 streams. Nothing is learned in <a href="#">isolation.</a>We contextualise the content so that the<a href="#"> knowledge</a> and skills gained in each learning unit feeds into, and is expanded upon, within the next unit.The outputs of each stream will be a project. </p>
+				<button class="bottom_button">Button</button>
+				</div>
+			</div>
+			<div class="card stream3">
+				<img class="card_image"src="img/4.png">
+				<h2 class="card_head">Django</h2>
+				<p class="card_para">The syllabus has been developed to help you transform your career. The summarised syllabus, below, provides you with a snapshop of what<a href="#"> skills </a>you will come away with. Feel free to contact us for more detail on what you will learn.</p>
+				<button class="bottom_button">Button</button>
+			</div>
+			<div class="card stream1">
+				<img class="card_image"src="img/1.png">
+				<h2 class="card_head">CSS</h2>
+				<p class="card_para" id="hide">The syllabus has been developed to help you transform your career. The summarised syllabus, below, provides you with a snapshop of what skills you will come away with. Feel free to contact us for more detail on what you will learn.</p>
+				<button class="bottom_button">Button</button>
+			</div>
+			<div id="my_footer">
+				<p id="copyright">Copyright Infomation</p>
+			</div>
+		</div>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="script.js"></script> <!-- Scripts located at the bottom of the body to insure page is fully loaded before execution -->
+        <script>
+		
+		// $("p").on("click", function(){
+		// 	$("p").addClass("redbackground");
+		// });
+		
+		
+		// $("h2").hover(
+		// 	function(){
+		// 	$("h2").addClass("headerhover");
+		// 	}, function(){
+		// 		$("h2").removeClass("headerhover");
+		// 	});
+			
+		// $("h2").hover(
+		// 	function(){
+		// 		$(this).addClass("fntchng1");
+		// 	}, function(){
+		// 		$(this).removeClass("fntchng1")
+			
+				
+		// 	});
+			
+		
+  //  $(".bottom_button").mouseenter(function(){
+  //      $("body").css( "background-color", "black"); 
+  //  });
+
+  
+  //  $(".bottom_button").mouseleave(function(){
+  //      $("body").css( "background-color", "#eee"); 
+  //  });
+    
+  //  $(collapse).on("click", function(){
+  //  	$(this).hide('slow');
+  //  });
+    
+    // $("button").on("click", function() {
+    //     $("p").slideToggle();
+    // });
+    
+    
+ //   $("#button_effects1").mouseenter(function(){
+ //       $('#button_effects1').fadeTo(1000, 0.5);
+ //   });
+ //   $("#button_effects1").mouseleave(function(){
+ //       $('#button_effects1').fadeTo(1000, 1);
+ //   });
+	
+	// $("#button_effects1").click(function(){
+ //       $('#par2').slideToggle('1000');
+ //   });
+    
+    /*-----This didn't work------*/
+    // $("li").on("click", function() {
+    	
+    // 	var streamNames= $(this).attr("class").split("");
+    	
+    // 	var boxClass=streamNames[0];
+    // 	var streamName=streamNames[1];
+    	
+    // 	if(
+    // 		$(this).css("background-color")== "rgb(255,0,0)"){
+    // 			$("." + streamName).css("background-color", "#000");
+    // 		} else{
+    // 			$("." + boxClass).css("background-color", "#000");
+    // 			$("." + steamName).css("background-color", "red");
+    // 		}
+    // 		});
+    
+ //   $("#stream1_btn").on("click", function() {
+ //       $(".stream1").addClass("highlight_stream");
+ //       $(".stream2").removeClass('highlight_stream');
+	// 	$(".stream3").removeClass('highlight_stream');
+ //   });
+    
+ //    $("#stream2_btn").on("click", function() {
+ //       $(".stream2").addClass("highlight_stream");
+ //       $(".stream1").removeClass('highlight_stream');
+	// 	$(".stream3").removeClass('highlight_stream');
+ //    });
+     
+	// $("#stream3_btn").on("click", function() {
+ //       $(".stream3").addClass("highlight_stream");
+ //       $(".stream2").removeClass('highlight_stream');
+	// 	$(".stream1").removeClass('highlight_stream');
+ //    });
+     
+    // $("p").on("click", function(){
+    // 	$("p").parent().hide();
+    	
+
+
+	// $("p").on("click", function() {
+	// if (	$(this).children().css("background-color")=="yellow");
+	// 	$(this).children().css("background-color", "white");
+	// } else {
+	//     $(this).children().css("background-color", "yellow");
+	
+	// });
+	
+	$("button").on("click", function() {
+	    $(this).prev().slideToggle("slow");
+	});
+   
+    
+		</script>
+		
+	</body>
+</html>
